@@ -3,7 +3,6 @@
 > SirkPire is a powerful and easy library for building self bots in Rubika
 
 <p align='center'>
-    <img src='https://iili.io/HIjPRS9.jpg' alt='SirkPire Library 1.0' width='356'>
     <a href='https://github.com/MrTelepathic/SirkPire'>GitHub</a>
 </p>
 

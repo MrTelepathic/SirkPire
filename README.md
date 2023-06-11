@@ -1,9 +1,12 @@
-<h1>SirkPire 1.0<h1/>
+<h1>SirkPire 1.0.0</h1>
 
-> SirkPire is a powerful and easy library for building self bots in Rubika
+> SirkPire is a powerful and easy library for building self Bots in Rubika
+
 
 <p align='center'>
     <a href='https://github.com/MrTelepathic/SirkPire'>GitHub</a>
+    •
+    <a href='https://rubika.ir/SirkPire'>Documents</a>
 </p>
 
 <hr>
@@ -12,25 +15,28 @@
 ``` python
 from SirkPire import Bot, Message
 
-bot = Bot('TOKEN')
+bot = Bot("TOKEN")
 
-for msg in bot.on_message():
-    s = Message(msg)
-    if s.text() == 'Hello':
-        bot.send_text(s.chat_id(), 'Hello from SirkPire Library', s.message_id())
+for update in bot.on_message():
+    message = Message(update)
+    if message.text() == 'hello':
+        bot.send_text(message.chat_id(), f"**Hello** ``{message.author_title()}`` ! __This is a__ --test-- ~~message from~~ @@SirkPire Library@@(https://example.com).", message.message_id())
 ```
 
 <hr>
 
 ### Features:
     
-- *Fast* : **The minimum request time is 0.07 seconds and the maximum request time is 0.3 seconds**
-- *Easy* : **All methods and features are designed as easy and optimal as possible**
-- *Powerful* : **While the library is simple, it has high speed and features that make your work easier and faster**
+- **Fast** : *The requests are very fast.*
+
+- **Easy** : *All methods and features are designed as easy and optimal as possible*
+
+- **Powerful** : *While the library is simple, it has high speed and features that make your work easier and faster*
+
 
 <hr>
 
-# Rubika : @SirkPire
+## Rubika : @SirkPire
 
 ### Install or Update:
 

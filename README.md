@@ -13,7 +13,7 @@
 
 **Example:**
 ``` python
-from SirkPire import Bot, Message
+from SirkPire import Bot, message
 
 bot = Bot("TOKEN")
 

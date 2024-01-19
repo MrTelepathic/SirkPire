@@ -18,7 +18,7 @@ from SirkPire import Bot, message
 bot = Bot("TOKEN")
 
 for update in bot.on_message():
-    message = Message(update)
+    message = message(update)
     if message.text() == 'hello':
         bot.send_text(message.chat_id(), f"**Hello** ``{message.author_title()}`` ! __This is a__ --test-- ~~message from~~ @@SirkPire Library@@(https://example.com).", message.message_id())
 ```
